@@ -1,0 +1,103 @@
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title demo
+    link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel='stylesheet', href='stylesheets/lrtk.css')
+    style.
+      #showLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      background-color: #449D44;
+      border: none;
+      text-align: center;
+      }
+  body
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#')
+            span.glyphicon.glyphicon-book(aria-hidden='true')
+            |  Brand
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#') 链接
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | 更多 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') 7*24h快讯
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider(role='separator')
+                li
+                  a(href='#') Separated link
+                li.divider(role='separator')
+                li
+                  a(href='#') One more separated link
+          ul.nav.navbar-nav.navbar-right
+            // 右侧组件
+            li.search.titlebtn
+              span.glyphicon.glyphicon-search.center-block
+              span 搜索
+            li.login.titlebtn
+              span.glyphicon.glyphicon-user.center-block
+              span 登录
+            li.register.titlebtn
+              span.glyphicon.glyphicon-log-in.center-block
+              span 注册
+        // /.navbar-collapse
+      // /.container-fluid
+    #showLeft
+      img.user-img(src='images/1406085949446.jpg')
+    .body.container
+      .main
+        nav#cbp-spmenu-s1.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left
+          img.user-img.big(src='images/1406085949446.jpg')
+          h3 御坂美琴
+          a(href='http://www.htmleaf.com/', target='_blank') 比赛推送
+          a(href='http://www.htmleaf.com/', target='_blank') 近期赛况
+          a(href='http://www.htmleaf.com/', target='_blank') 综合查询
+          a(href='http://www.htmleaf.com/', target='_blank') Catsear azuki bean
+          a(href='http://www.htmleaf.com/', target='_blank') Dandelion bunya
+          a(href='http://www.htmleaf.com/', target='_blank') Rutabaga
+        .container-fluid
+          .row
+            -for(var i=0;i<4;i++){
+              .col-sm-4.col-md-3.col-xs-6
+                  .thumbnail
+                    .img-box
+                      img.art-img(src='images/media.jpg')
+                      .details
+                         span dasdsadasdsadfsg
+                    .caption
+                       h3= title[i]
+               -}
+            
+       
+           
+
+    script(src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js')
+    script(type='text/javascript', src='javascripts/bootstrap.min.js')
+    script(type='text/javascript', src='javascripts/classie.js')
+    script(src='javascripts/jquery.hoverdir.js')
+    script(src='javascripts/modernizr.custom.97074.js')
+    script(type='text/javascript', src='javascripts/edit.js')
